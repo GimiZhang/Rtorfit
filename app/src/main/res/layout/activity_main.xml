@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/id_btnget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询(RetrofitGetRequest)"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@android:color/holo_green_light"/>
+
+    <EditText
+        android:id="@+id/sort"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/id_btnget"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:hint="请输入要查询的城市"
+        android:textColorHint="#66000000"/>
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sort"
+        android:text="天气查询"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_title"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_green_dark"/>
+        <include
+            android:id="@+id/fl_city"
+            layout="@layout/item"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+        <include
+            android:id="@+id/fl_date_y"
+            layout="@layout/item"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+        <include
+            android:id="@+id/fl_week"
+            layout="@layout/item"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+        <include
+            android:id="@+id/fl_temperature"
+            layout="@layout/item"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+        <include
+            android:id="@+id/fl_weather"
+            layout="@layout/item"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/id_tvName"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Hello World!"
+        android:textSize="16sp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/id_tvValue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="温度"
+        android:layout_marginLeft="130dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_orange_light"/>
+
+</FrameLayout>
